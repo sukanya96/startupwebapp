@@ -1,0 +1,67 @@
+<ion-content>
+ <div class="container">
+  
+  <div class="box">
+    
+    <form [formGroup]="formcontrol" (ngSubmit)="login()" class="login-form">
+      
+    <img src="..//../assets/startup2.png" style="height: 45px;width: 191px;margin-top: 10px;">
+    <button class="close">
+      <ion-icon name="close-outline" (click)="dismiss()" 
+      style="font-size:25px;margin-bottom: 0em;float: right;margin-top:10px;"></ion-icon>
+    </button>
+      <h4 style="text-align: center;">Register</h4>
+
+  <input type="text" placeholder="FullName" formControlName="fullname" required>
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.fullname.errors?.required">
+    fullname is required.
+  </span>
+  
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.fullname.errors?.pattern">
+    Name must contain only letters.
+  </span>
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.fullname.errors?.maxlength">
+    Name cannot be more than 20 characters long.
+  </span>
+
+  
+  <input type="text" placeholder="Email" formControlName="email" required>
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+    Email is required.
+  </span>
+ 
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+    Please enter valid email
+  </span>
+
+  <input [type]="fieldTextType ? 'text' : 'password'" placeholder="Password" required formControlName="password" >
+  <i class="far" [ngClass]="fieldTextType ? 'fa-eye': 'fa-eye-slash'" 
+  (click)="toggleFieldTextType()" >
+  </i>
+
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.required">
+    password is required.
+
+  </span>
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.minlength">
+    password must be at least 6 characters long.
+  </span>
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.maxlength">
+    password cannot be more than 10 characters long.
+  </span>
+ 
+  <span class="error ion-padding" *ngIf="isSubmitted && errorControl.password.errors?.maxLength">
+    password should be greater than 6
+  </span>
+  <input type="submit" name="Register" (click)="register()" value="Register">
+
+  <div class="links">
+    <p style="text-align: center;">Already have an account ?
+    <a href="home" style="color: blue;">Login</a></p>
+  </div>
+  </form>
+
+  </div>
+  </div>
+
+</ion-content>

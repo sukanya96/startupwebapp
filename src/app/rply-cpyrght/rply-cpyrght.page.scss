@@ -1,0 +1,158 @@
+ion-label{
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 0em;
+}
+
+@media (min-width: 1200px) {
+.faqs {
+  width: 1000px;
+}
+}
+.new1{
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
+.new{
+text-align: left;
+}
+.image{
+  width:60px;
+  height: 70px;
+  max-width: none;
+}
+
+
+@media (min-width: 1200px) {
+  .trade {
+    width: 600px;
+  }
+  }
+
+  
+    
+    .card-header{
+      padding: unset;
+    }
+
+p{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 17px;
+margin-bottom: 0em;
+}
+
+a{
+text-decoration: none;
+}
+
+.warning{
+background-color: skyblue;
+padding: 10px 30px;
+}
+
+ion-segment-button{
+text-transform: initial;
+}
+h5{
+color: black;
+}
+.primary {
+border-color: blue;
+color: blue;
+font-size: 14px;
+}
+.warning{
+font-size: 15px;
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 25px;
+}
+
+ion-icon{
+font-size: 25px!important;
+}
+
+ion-item{
+margin-bottom: 0em;
+}
+
+ion-col{
+height: 35px;
+}
+h6{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 14px;
+}
+img{
+margin-bottom: 0em;
+}
+
+@media (min-width: 576px){
+.col-md-6 {
+  -ms-flex: 0 0 50%;
+  flex: 4 0 50%;
+  max-width: 75%;
+}}
+
+.card .card-body {
+  color: black;
+  font-size: 13px;
+}
+.card .card-body .card-text{
+  color: black;
+}
+
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+  text-align: left;
+  color: black;
+  
+  }
+  .dropdown-toggle::after{
+  display: none;
+  }
+  a{
+  text-decoration: none;
+  font-family: Calibri;
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar .dropdown-menu a {
+  font-size: 16px;
+  color: black;
+}
+
+a{
+  color: white;
+  font-family: Calibri;;
+
+}
+.btn{
+  border: solid 1px white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+  color: white;
+}
+
+
+footer {
+position: relative;
+left: 0;
+bottom: 0;
+background : #304ffe  ;
+}
+.footer-copyright{
+  background: #0d47a1;
+width: 100%;		
+}
+
+
+
+
+
+
+

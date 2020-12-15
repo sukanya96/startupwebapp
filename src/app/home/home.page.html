@@ -1,0 +1,635 @@
+
+
+<ion-fab vertical="bottom" horizontal="end" slot="fixed" style="color: blue;">
+<ion-fab-button (click)="scrollToTop()"> 
+  <ion-icon name="chevron-up-circle"></ion-icon>
+</ion-fab-button>
+</ion-fab>
+
+<nav class="navbar navbar-expand-lg navbar-light blue">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand" href="#">
+    <img src="..//../assets/startup2.png" style="height: 45px;width: 189px;">
+  </a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!--<span class="navbar-toggler-icon" style="font-size: 20px;"></span>-->
+    <i class="fa fa-bars" style="color:#fff; font-size:23px;"></i>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="color: white;">START BUSINESS</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/pvt" style="color: black;">Private Limited Company</a>
+          <a class="dropdown-item" routerLink="/one-person" style="color: black;">One Person Company</a>
+          <a class="dropdown-item" routerLink="/lmtd" style="color: black;">Limited Liability Partnership</a>
+          <a class="dropdown-item" routerLink="/gst" style="color: black;">GST Registration</a>
+          <a class="dropdown-item" routerLink="/pub-lmtd" style="color: black;">Public Limited Company</a>
+          <a class="dropdown-item" routerLink="/section" style="color: black;">Section 8 NGO Company</a>
+        </div>
+      </li>
+    
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="color: white;">PROTECT BUSINESS</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/trade-reg" style="color: black;">Trademark Registration</a>
+      <a class="dropdown-item" routerLink="/reply-trade" style="color: black;">Reply to Trademark Objection</a>
+      <a class="dropdown-item" routerLink="/renew-trade" style="color: black;">Renew Your Trademark</a>
+      <a class="dropdown-item" routerLink="/licence-trade" style="color: black;">Licence Your Trademark</a>
+      <a class="dropdown-item" routerLink="/sell-trade" style="color: black;">Sell Your Trademark</a>
+      <a class="dropdown-item" routerLink="/cpy-rght" style="color: black;">Copyright Registration</a>
+      <a class="dropdown-item" routerLink="/rply-cpyrght" style="color: black;">Reply to Copyright Objection</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="color: white;">MANAGE BUSINESS</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/roc-trade" style="color: black;">ROC Return Filing for Pvt.Ltd.</a>
+      <a class="dropdown-item" routerLink="/roc-opc" style="color: black;">ROC Return Filing for OPC</a>
+      <a class="dropdown-item" routerLink="/roc-llp" style="color: black;">ROC Return Filing for LLP</a>
+      <a class="dropdown-item" routerLink="/apptmnt" style="color: black;">Appointment of Director</a>
+      <a class="dropdown-item" routerLink="/resgn" style="color: black;">Resignation of Director</a>
+      <a class="dropdown-item" routerLink="/chgaddrs" style="color: black;">Change in Office Address</a>
+      <a class="dropdown-item" routerLink="/inc-capital" style="color: black;">Increasing Capital of Company</a>
+      <a class="dropdown-item" routerLink="/closure" style="color: black;">Closure of Pvt.Ltd</a>
+      <a class="dropdown-item" routerLink="/c-opc" style="color: black;">Closure of OPC</a>
+      <a class="dropdown-item" routerLink="/c-llp" style="color: black;">Closure of LLP</a>
+        </div>
+      </li>
+
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false" style="color: white;">GROW BUSINESS</a>
+        <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" routerLink="/iso" style="color: black;">ISO Certification</a>
+      <a class="dropdown-item" routerLink="/msme" style="color: black;">MSME/SSI Registration</a>
+        </div>
+      </li>
+
+    </ul>
+    
+    <form class="form-inline">
+      <div class="md-form my-0">
+        <ion-button color="primary" (click)="showModal()">Login</ion-button>
+        <ion-button color="primary" (click)="showModal1()">Register</ion-button>
+      </div>
+    </form>
+  </div>
+  <!-- Collapsible content -->
+</nav>
+<!--/.Navbar-->
+
+<ion-content>
+  <div class="newclass1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container">
+          <h2 style="text-align: left;margin-top: 40px;color: white;">Your Trusted Partner
+            for Startup Legalities.</h2>
+            <p style="text-align: left;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-bottom: 0px;">
+              We handle your messy legalities and documentation,</p>
+          <p style="text-align: left;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+              so that you worry less and focus more on your dream business.</p>
+          </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h5 class="font-weight-bold text-uppercase mt-4 mb-4"></h5>
+
+        <ul class="list-unstyled">
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="pvt" >
+            <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>Company Registration</a>
+          </li>
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="roc-trade">
+              <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>ROC Filing</a>
+          </li>
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="gst">
+              <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>GST Registration</a>
+          </li>
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="msme">
+              <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>MSME Registration</a>
+          </li>
+        </ul>
+          </div>
+          <div class="col-md-6">
+            <h5 class="font-weight-bold text-uppercase mt-4 mb-4"></h5>
+
+        <ul class="list-unstyled">
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="trade-reg">
+              <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>Trademark Registration
+            </a>
+          </li>
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="startup">
+              <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>Startup Registration</a>
+          </li>
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="iso">
+              <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>ISO Certification</a>
+          </li>
+          <li style="font-size: 18px;margin-bottom: 5px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            <a href="closure">
+              <ion-icon name="checkmark-circle-outline" style="margin-right:15px;"></ion-icon>Closure of Company</a>
+          </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="box">
+
+          <form [formGroup]="formcontrol" class="login-form" (ngSubmit)="login()" >
+  
+           <h4 style="text-align: center;">Get Quote Instantly in a Minute</h4>
+           <ion-item style="display: flex;--padding-start: none;--inner-padding-end: none;" lines="none">        
+            <select class="login-form1" placeholder="Select" style="color: black;margin-bottom: 0px;">
+              <option selected>Select</option>
+              <option value="1">Mr</option>
+              <option value="2">Ms</option>
+              <option value="3">Mrs</option>
+          </select>
+  
+            <input type="text" placeholder="Full Name" formControlName="fullname" 
+            style="margin-top: 0px;margin-left: 5px;">
+          </ion-item>
+            
+            <span style="margin-left: 90px;" class="error ion-padding" *ngIf="isSubmitted && errorControl.fullname.errors?.required">
+              Full Name is required.
+            </span>         
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.fullname.errors?.minlength">
+              Full Name must be at least 3 characters long.
+            </span>
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.fullname.errors?.pattern">
+              Full Name must contain only letters.
+            </span>
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.fullname.errors?.maxlength">
+              Full Name cannot be more than 20 characters long.
+            </span>  
+  
+            <input type="text" placeholder="Email" formControlName="email">
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.required">
+              Email is required.
+            </span>        
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+              Please enter valid email
+            </span>
+        
+            <input type="number" placeholder="Mobile" formControlName="phone"
+             inputmode="numeric" minlength=10 maxlength=10>
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.phone.errors?.required">
+              Mobile number is required.
+            </span>        
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.phone.errors?.pattern">
+              Please enter 10 digit phone number
+            </span>
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.phone.errors?.maxLength">
+           mobile number not valid </span>
+           <span class="error ion-padding" *ngIf="isSubmitted && errorControl.phone.errors?.minLength">
+            Please enter 10 digit phone number
+             </span>
+  
+            <input type="text" placeholder="City" formControlName="city">
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.city.errors?.required">
+              City is required.
+            </span>         
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.city.errors?.minlength">
+              City must be at least 3 characters long.
+            </span>
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.city.errors?.pattern">
+              City must contain only letters.
+            </span>
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.city.errors?.maxlength">
+              City cannot be more than 20 characters long.
+            </span>
+            
+            <select class="login-form2" placeholder="Select" style="color: black;">
+              <option selected>Looking For*</option>
+              <option value="1">One Person Company Registration</option>
+              <option value="2">Pvt.Ltd.Registration</option>
+              <option value="3">LLP Registration</option>
+              <option value="4">Trademark Registration</option>
+              <option value="5">GST Registration</option>
+              <option value="6">MSME Registration</option>
+              <option value="7">ISO Certification</option>
+              <option value="8">Other Services</option>
+  
+          </select>
+            <ion-button style="--background:orange;display: block;margin-top: 30px;" (click)="login()">GET STARTED NOW</ion-button>
+          </form>
+        </div> 
+      
+      </div>
+    </div>
+  </div>
+  </div>
+
+   <div class="con">
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+    
+      <h3 style="text-align: center;color: blue;">COMPANY REGISTRATION</h3>
+    
+        <div class="row justify-content-center" >
+        <div class="col-md-4">
+
+        <ion-card style="color: black;">
+         <ion-item lines="none">
+         <img src="https://www.startupwala.com/images/Pvt-Ltd-Registration.svg">
+         <ion-card-header>
+         <h4 style="color: black;">Pvt.Ltd. Registration</h4>          
+         </ion-card-header>
+         </ion-item>  
+         <ion-card-content style="text-align: justify;">
+         Private limited company is popular and well known business structure it enjoys wide options to 
+         raise funds through bank loans, angel investors, venture capitalists, in comparison to LLPs and OPCs.
+         </ion-card-content>
+         <ion-item lines="none" >
+           <ion-label>₹6,299</ion-label>
+           <ion-button fill="outline" style="text-align: right;" routerLink="/pvt">Get Started</ion-button>          
+         </ion-item>       
+         </ion-card>
+         <br>
+         </div>
+           
+        <div class="col-md-4">
+           
+       <ion-card style="color: black;">
+        <ion-item lines="none">
+         <img src="https://www.startupwala.com/images/opc-registration.svg">
+         <ion-card-header>
+           <h4 style="color: black;">OPC Registration</h4>          
+         </ion-card-header>
+         </ion-item>      
+         <ion-card-content style="text-align: justify;">
+           The one person company helps startup entrepreneurs they can approach angel investors, venture 
+           capitalists for funding and easily convert their OPC into multi shareholder private limited company. 
+         </ion-card-content>
+         <ion-item lines="none" >
+           <ion-label>₹4,799</ion-label>
+           <ion-button fill="outline" style="text-align: right;" routerLink="/one-person">Get Started</ion-button>          
+         </ion-item>        
+         </ion-card>
+         
+         <br>
+       </div>
+    
+        <div class="col-md-4">
+                
+           <ion-card style="color: black;">    
+             <ion-item lines="none">
+             <img src="https://www.startupwala.com/images/limited-liability-partnership.svg">
+             <ion-card-header>
+               <h4 style="color: black;">LLP Registration</h4>          
+             </ion-card-header>
+             </ion-item> 
+             <br>         
+             <ion-card-content style="text-align: justify;">
+             Limited liability partnership is the modern business option for traditional firms operating
+              as partnership. 
+             </ion-card-content>             
+             <br> 
+             <ion-item lines="none">
+               <ion-label>₹3,499</ion-label>
+               <ion-button fill="outline" style="text-align: right;" routerLink="/lmtd">Get Started</ion-button>          
+             </ion-item> 
+             </ion-card>
+            
+           <br>     
+           </div>
+         </div>
+         </div>
+         
+         <div class="carousel-item">
+    
+        <h3 style="text-align: center;color: blue;">TRADEMARK & IPR SERVICES</h3>
+    
+    
+         <div class="row justify-content-center" >
+         <div class="col-md-4">
+         
+         <ion-card style="color: black;">
+         <ion-item lines="none">
+         <img src="https://www.startupwala.com/images/Trademark-Registration.svg">
+         <ion-card-header>
+         <h4 style="color: black;">Trademark Registration</h4>          
+         </ion-card-header>
+         </ion-item>      
+         <ion-card-content style="text-align: justify;margin-bottom: 10px;">
+           Nobody will dare to copy your brand name once it is a registered trademark. 
+         </ion-card-content>
+         <ion-item lines="none" >
+           <ion-label>₹998</ion-label>
+           <ion-button fill="outline" style="text-align: right;" routerLink="/trade-reg">Get Started</ion-button>          
+         </ion-item>
+       </ion-card>
+      
+       <br>
+       </div>
+    
+       <div class="col-md-4">
+       
+         <ion-card style="color: black;">
+         <ion-item lines="none">
+         <img src="https://www.startupwala.com/images/Copyright-Registration.svg">
+         <ion-card-header>
+         <h4 style="color: black;">Copyright Registration</h4>          
+         </ion-card-header>
+         </ion-item>      
+         <ion-card-content style="text-align: justify;margin-bottom: 10px;">
+           Copyright is an important property of the owner.Copyright protects from copycats. 
+         </ion-card-content>
+         <ion-item lines="none" >
+           <ion-label>₹4,999</ion-label>
+           <ion-button fill="outline" style="text-align: right;" routerLink="/cpy-rght">Get Started</ion-button>          
+         </ion-item>        
+       </ion-card>
+       <br>
+      </div>
+      </div>
+      </div>
+        
+    
+      <div class="carousel-item">
+    
+    
+        <h3 style="text-align: center;color: blue;">ROC FILING</h3>
+         <div class="row">
+         <div class="col-md-4">
+         
+         <ion-card style="color: black;">
+         <ion-item lines="none">
+         <img src="https://www.startupwala.com/images/ROC-Return-Filing-for-Pvt-Ltd-Company.svg">
+         <ion-card-header>
+           <h4 style="color: black;">ROC Return Filing for Pvt. Ltd. Company</h4>          
+         </ion-card-header>
+         </ion-item>      
+         <ion-card-content style="text-align: justify;">
+           ROC return gives details of changes taken place in the company during the year and need to be filed
+            with the ROC even though the company has not done any business during the year.        
+         </ion-card-content>
+         <ion-item lines="none" >
+           <ion-label>₹3,999</ion-label>
+           <ion-button fill="outline" style="text-align: right;" routerLink="/roc-trade">Get Started</ion-button>          
+         </ion-item>
+       </ion-card>
+       <br>
+       </div>
+    
+       <div class="col-md-4">
+       
+         <ion-card style="color: black;">
+           <ion-item lines="none">
+           <img src="https://www.startupwala.com/images/ROC-Return-Filing-for-OPC-Company.svg">
+           <ion-card-header>
+             <h4 style="color: black;">ROC Return Filing for OPC Company</h4>          
+           </ion-card-header>
+           </ion-item>       
+           <ion-card-content style="text-align: justify;">
+             ROC return gives details of changes taken place in the company during the year and need to be filed
+              with the ROC even though the company has not done any business during the year.       
+           </ion-card-content>  
+           <ion-item lines="none">
+             <ion-label>₹2,999</ion-label>
+             <ion-button fill="outline" style="text-align: right;" routerLink="/roc-opc">Get Started</ion-button>          
+           </ion-item>
+         </ion-card>
+       <br>
+       </div>
+    
+       <div class="col-md-4">
+      
+         <ion-card style="color: black;">
+           <ion-item lines="none">
+           <img src="https://www.startupwala.com/images/LLP-ROC-Return-Filing-Form-11-&-Form-8.svg">
+           <ion-card-header>
+           <h4 style="color: black;">LLP ROC Return Filing Form 11 & Form 8</h4>          
+           </ion-card-header>
+           </ion-item>
+         
+           <ion-card-content style="text-align: justify;">
+             ROC return gives details of changes taken place in the company during the year and need to be filed 
+             with the ROC even though the company has not done any business during the year.        
+           </ion-card-content>
+    
+           <ion-item lines="none">
+             <ion-label>₹1,999</ion-label>
+             <ion-button fill="outline" style="text-align: right;" routerLink="/roc-llp">Get Started</ion-button>          
+           </ion-item>
+         </ion-card>
+       <br>
+     </div>
+     </div>
+    </div>
+    
+    
+    
+    
+    <div class="carousel-item">
+    
+        <h3 style="text-align: center;color: blue;"> GST REGISTRATION</h3>
+    
+    
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+         <ion-card style="color: black;">
+           <ion-item lines="none">
+           <img src="https://www.startupwala.com/images/GST-Registration.svg">
+           <ion-card-header>
+           <h4 style="color: black;">GST Registration</h4>          
+           </ion-card-header>
+           </ion-item>
+         
+           <ion-card-content style="text-align: justify;">
+             Anyone supplying goods or services to another state, Online service providers,
+              eCommerce sites need to apply for GST regardless of turnover.       
+           </ion-card-content>
+    
+           <ion-item lines="none" >
+             <ion-label>₹1,999</ion-label>
+             <ion-button fill="outline" style="text-align: right;" routerLink="/gst">Get Started</ion-button>          
+           </ion-item>
+         </ion-card>
+         <br></div>
+         </div></div>
+       
+         <div class="carousel-item">
+    
+        <h3 style="text-align: center;color: blue;"> STARTUP INDIA,ISO & MSME</h3>
+    
+         <div class="row">
+         <div class="col-md-4">
+        
+         <ion-card style="color: black;">
+           <ion-item lines="none">
+           <img src="https://www.startupwala.com/images/icons/certificate.svg" 
+           style="width: 50px;height: 60px;">
+           <ion-card-header>
+           <h4 style="color: black;">Startup India Registration</h4>          
+           </ion-card-header>
+           </ion-item>
+         
+           <ion-card-content style="text-align: justify;margin-bottom: 20px;">
+             Startup India Scheme recognition is a very important license for a Startup to get eligible for 3 years 
+             Income Tax exemption, get easy funding and easy loan processing.      
+           </ion-card-content>
+    
+           <ion-item lines="none" >
+             <ion-label>₹3,999</ion-label>
+             <ion-button fill="outline" style="text-align: right;" routerLink="/startup">Get Started</ion-button>          
+           </ion-item>
+         </ion-card>
+        
+         <br>
+         </div>
+    
+         <div class="col-md-4">
+         
+           <ion-card style="color: black;">
+             <ion-item lines="none">
+             <img src="https://www.startupwala.com/images/ISO-Certification.svg" 
+             style="width: 50px;height: 60px;">
+    
+             <ion-card-header>
+             <h4 style="color: black;">ISO Certification</h4>          
+             </ion-card-header>
+             </ion-item>
+           
+             <ion-card-content style="text-align: justify;margin-bottom: 20px;">
+               ISO means International Standard Organization. It provides a set of
+                requirements that helps management of business to achieve customer satisfaction.      
+             </ion-card-content>
+             
+             <ion-item lines="none" >
+               <ion-label>₹4,999</ion-label>
+               <ion-button fill="outline" style="text-align: right;" routerLink="/iso">Get Started</ion-button>                      
+             </ion-item>
+             
+           </ion-card>        
+           
+           <br>
+           </div>
+    
+           <div class="col-md-4">
+           
+             <ion-card style="color: black;">
+               <ion-item lines="none">
+               <img src="https://www.startupwala.com/images/MSME-Registration.svg" 
+               style="width: 50px;height: 40px;">
+     
+               <ion-card-header >
+               <h4 style="color: black;">MSME Registration</h4>          
+               </ion-card-header>
+               </ion-item>
+             
+               <ion-card-content style="text-align: justify;margin-bottom: 0em;">
+                 MSME (Micro Small and Medium Enterprises) Registration is 
+                 the procedure to get your firm registered under MSME development Act.      
+               </ion-card-content>
+               
+               <br>
+               <ion-item lines="none">
+                 <ion-label>₹1,699</ion-label>
+                 <ion-button fill="outline" style="text-align: right;" routerLink="/msme">Get Started</ion-button>          
+               </ion-item>
+               
+             </ion-card>
+             <br>
+           </div>
+         </div>
+            
+       </div>
+       </div>
+       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black;"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="color: black;"></span>
+        <span class="sr-only">Next</span>
+      </a>
+       </div>
+       </div>
+      
+     <br>
+   
+     <footer class="page-footer font-small blue pt-4">
+
+      <!-- Footer Elements -->
+      <div class="container">
+    
+        <a class="navbar-brand">  
+          <img src="..//../assets/startup2.png" style="height: 40px;width: 180px;">
+                  </a>
+        <!--Grid row-->
+        <div class="row">
+    
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+    
+            <!-- Form -->
+            <form class="form-inline">
+              <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
+                aria-label="Search">
+              <i class="fas fa-search" aria-hidden="true"></i>
+            </form>
+            <!-- Form -->
+    
+          </div>
+          <!--Grid column-->
+    
+          <!--Grid column-->
+          <div class="col-md-6 mb-4">
+    
+            <form class="input-group">
+              <input type="text" class="form-control form-control-sm mr-3 w-50" placeholder="Your email"
+                aria-label="Your email" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-sm btn-outline-white my-0" type="button">Send</button>
+              </div>
+            </form>
+    
+          </div>
+          <!--Grid column-->
+    
+        </div>
+        <!--Grid row-->
+    
+      </div>
+      <!-- Footer Elements -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-2">© 2020 Copyright:
+        <a href="https://www.proacscentglobal.com/"> Proascent.com</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+      </ion-content>
+      <!-- Footer -->
+      
+      
+      
+
+
